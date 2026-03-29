@@ -109,15 +109,16 @@ nav#nav.scrolled { box-shadow: 0 2px 20px rgba(11,42,74,.1); }
 .stats { background: var(--navy); padding: 2.5rem 2rem; border-top: 1px solid rgba(255,255,255,.05); }
 .stats-inner { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; }
 .stat { text-align: center; }
-.stat-num { font-size: 2.5rem; font-weight: 800; color: var(--amber); line-height: 1; }
+.stat-num { font-size: 2.5rem; font-weight: 800; color: var(--amber); line-height: 1; letter-spacing: -.02em; }
 .stat-label { font-size: .78rem; color: rgba(255,255,255,.8); text-transform: uppercase; letter-spacing: .1em; margin-top: .35rem; }
 
 /* ── PAGE HERO (inner pages) ── */
 .page-hero { background: var(--navy); padding: 120px 2rem 80px; position: relative; overflow: hidden; }
 .page-hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,.04) 1px, transparent 0); background-size: 40px 40px; }
 .page-hero-inner { max-width: 1240px; margin: 0 auto; position: relative; z-index: 2; }
-.page-hero h1 { font-size: clamp(2rem,4vw,3.2rem); font-weight: 800; color: var(--white); margin-bottom: 1rem; }
-.page-hero p { font-size: 1.1rem; color: rgba(255,255,255,.8); max-width: 620px; line-height: 1.75; }
+.page-hero h1 { font-size: clamp(2.4rem,4.5vw,3.8rem); font-weight: 800; color: var(--white); margin-bottom: 1rem; line-height: 1.1; letter-spacing: -.02em; }
+.page-hero h1 em { font-style: normal; color: var(--amber); }
+.page-hero p { font-size: 1.1rem; color: rgba(255,255,255,.8); max-width: 100%; line-height: 1.75; }
 .page-hero .eyebrow { color: var(--amber); }
 
 /* ── SECTIONS (WHITE BACKGROUND) ── */
