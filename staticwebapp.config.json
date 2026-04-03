@@ -1,6 +1,19 @@
 {
   "routes": [
-    { "route": "/sitemap.xml", "headers": { "Content-Type": "application/xml" } }
+    {
+      "route": "http://*",
+      "redirect": "https://{http.request.host}{http.request.uri}",
+      "statusCode": 301
+    },
+    {
+      "route": "/index.html",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/sitemap.xml",
+      "headers": { "Content-Type": "application/xml" }
+    }
   ],
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
